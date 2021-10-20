@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pure java script</title>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body id="av_body">
+        
+
+        <script>
+            //creating the element 
+            var h= document.createElement("header")
+            console.log(h);
+            h.innerHTML="HEADER"
+            //now putting the element in body
+            document.getElementById("av_body").appendChild(h)
+            //giving class to the element
+            document.querySelector("header").setAttribute("class","av_header");
+            //document.body.style.margin="0"
+            //now we are accessing the class 
+            var c = document.getElementsByClassName("av_header")
+            console.log(c)
+            //giving css properties by using js methods
+            c[0].style.width = "100%"
+            c[0].style.height = "120px"
+            c[0].style.border = "2px solid green"
+            c[0].style.textAlign ="center"
+            c[0].style.lineHeight ="120px"
+            c[0].style.fontWeight ="bold"
+            c[0].style.fontStyle ="italic"
+            c[0].style.fontSize ="4em"
+
+            var n = document.createElement("nav")
+            //console.log(n)
+            n.innerHTML="Navigation Menu"
+            //putting this nav in body
+            document.getElementById("av_body").appendChild(n)
+            //giving class to the nav
+            document.querySelector("nav").setAttribute("class","av_nav");
+            var navclass = document.getElementsByClassName("av_nav")
+            //console.log(navclass)
+            navclass[0].style.width = "100%"
+            navclass[0].style.height = "60px"
+            navclass[0].style.border = "2px solid green"
+            navclass[0].style.textAlign ="center"
+            navclass[0].style.lineHeight ="60px"
+            navclass[0].style.fontWeight ="bold"
+            navclass[0].style.fontStyle ="italic"
+            navclass[0].style.fontSize ="3em"
+
+            //now creating the aside1 section and aside2
+            let aside1 = document.createElement("aside")
+            aside1.innerHTML="ASIDE1"
+            let section = document.createElement("section")
+            section.innerHTML="SECTION"
+            let aside2 = document.createElement("aside")
+            aside2.innerHTML="ASIDE2"
+            console.log(aside1)
+            //now putting these three elements to body
+            document.getElementById("av_body").appendChild(aside1)
+            document.getElementById("av_body").appendChild(section)
+            document.getElementById("av_body").appendChild(aside2)
+
+            //document.querySelectorAll('aside').style.display= "inline-block"
+            var asides = document.querySelectorAll('aside')
+            //console.log(asides)
+            asides.forEach(function(currentValue,index,asides){
+                asides[index].style.display = 'inline-block';
+            });
+            document.querySelector('section').style.display = 'inline-block';
+            document.querySelector("aside").setAttribute("class","as1");
+            let as1 = document.getElementsByClassName('as1');
+            as1[0].style.width = "160px"
+            as1[0].style.height = "500px"
+            as1[0].style.border = "2px solid green"
+            as1[0].style.textAlign ="center"
+            as1[0].style.lineHeight ="60px"
+            as1[0].style.fontWeight ="bold"
+            as1[0].style.fontStyle ="italic"
+            
+            // setting the class attribute to section
+            document.querySelector('section').setAttribute("class","av_section")
+            let sect = document.getElementsByClassName('av_section');
+            // giving css properties to section
+            sect[0].style.width = "999px"
+            sect[0].style.height = "500px"
+            sect[0].style.border = "2px solid green"
+            sect[0].style.textAlign ="center"
+            sect[0].style.lineHeight ="60px"
+            sect[0].style.fontWeight ="bold"
+            sect[0].style.fontStyle ="italic"
+
+            // creating the footer element
+            var f = document.createElement("footer")
+            //console.log(f)
+            // putting the footer into body
+            document.getElementById("av_body").appendChild(f)
+            f.innerHTML= "FOOTER"
+            // giving class attribute to footer
+            document.querySelector("footer").setAttribute("class","av_footer")
+            let ftr = document.getElementsByClassName("av_footer")
+            //console.log(ftr)
+            ftr[0].style.border = "2px solid green"
+            ftr[0].style.width = "100%"
+            ftr[0].style.height = "100px"
+            ftr[0].style.border = "2px solid green"
+            ftr[0].style.textAlign ="center"
+            ftr[0].style.lineHeight ="100px"
+            ftr[0].style.fontWeight ="bold"
+            ftr[0].style.fontStyle ="italic"
+            ftr[0].style.fontSize ="4em"
+    
+
+            // giving class to another aside by using the index number
+            document.querySelectorAll('aside')[1].setAttribute('class',"a_aside2");
+            //.pop().setAttribute('class','a_aside2');
+
+            var x = document.getElementsByClassName('a_aside2');
+            //console.log(x[0]);
+            x[0].style.width = "162px"
+            x[0].style.height = "500px"
+            x[0].style.border = "2px solid green"
+            x[0].style.textAlign ="center"
+            x[0].style.lineHeight ="60px"
+
+        </script>
+    </body>
+</html>
