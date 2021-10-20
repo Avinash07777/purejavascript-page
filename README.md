@@ -1,0 +1,2 @@
+# purejavascript-page
+purejavascript-page
